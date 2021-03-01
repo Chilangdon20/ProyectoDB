@@ -38,13 +38,6 @@ def tienda(request):
 
 
 
-def contacto(request):
-    """
 
-    :param request:
-    :return Solicitud render de URL ,acceso a la vista contacto :
-
-    """
-    return render(request,'ProyectoWebApp/contacto.html')
 
 
