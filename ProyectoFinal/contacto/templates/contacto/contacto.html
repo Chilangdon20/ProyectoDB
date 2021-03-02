@@ -6,11 +6,18 @@
 
 <div class="contenedorFormulario">
 
-    <from action="" method="POST" style="text-align: center;">
+    {% if "valido" in request.GET %}
+
+
+    <p style="color:white;">Informacion enviada correctamente.</p>
+
+
+    {% endif %}
+    <from action="" method="POST" style="text-align: center";>
         {% csrf_token %}
     <table style="color:white; margin: 20px auto;">{{ miFormulario.as_table}}</table>
     <input type="submit" value="Enviar" style="width: 150px;">
     </from>
     </div>
-<p style="color: white">{{ request.POST }}</p>
+
 {% endblock %}
