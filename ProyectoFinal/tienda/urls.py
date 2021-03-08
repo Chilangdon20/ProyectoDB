@@ -5,16 +5,14 @@ al proyecto principal , esto mediante la libreria urls
 # librerias a utilizar
 from django.urls import path
 from ProyectoWebApp import views
-from django.conf import settings
-from django.conf.urls.static import static
+from . import views
 
 # lista que contiene las URL´s creadas , las cuales se conectan con las vistas
 urlpatterns = [
 
-    path('',views.home,name='Home'),
 
+    path('',views.tienda,name='Tienda'),
 
 ]
 # especificamos la ruta para que se puedan mostrar nuestras imagenes
 
-urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

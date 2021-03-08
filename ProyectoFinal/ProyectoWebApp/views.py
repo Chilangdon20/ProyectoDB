@@ -25,14 +25,6 @@ def home(request):
 
 
 
-def tienda(request):
-    """
-
-    :param request:
-    :return Solicitud render de URL ,acceso a la vista Tienda :
-
-    """
-    return render(request,'ProyectoWebApp/tienda.html')
 
 
 
