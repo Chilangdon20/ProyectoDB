@@ -3,6 +3,30 @@
 {% load static %}
 
 {%  block content %}
-<div><p style="color: white;"> ESTA ES LA TIENDA</p></div>
+    <div class="container">
+    <div class="row">
+    {% for producto in productos %}
 
+        <div class="col-md-3">
+
+        <div class="card" style="width: 100%; margin: 5px 5px;">
+
+
+        <div class="card.body" style="text-align: center">
+
+            <h5 class="card-title">
+                {{ producto.nombre }}
+
+                <p class="card-text">{{ producto.precio }}&nbsp;$MXN</p>
+            </h5>
+        </div>
+        </div>
+        </div>
+
+
+
+
+    {% endfor %}
+    </div>
+    </div>
 {% endblock %}
