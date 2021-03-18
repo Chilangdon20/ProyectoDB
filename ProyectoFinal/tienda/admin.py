@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import CategoriaProd, Producto
-# Register your models here.
+# Registramos los modelos de nuestra aplicacion tienda
 class CategoriaProdAdmin(admin.ModelAdmin):
     readonly_fields = ("created","updated")
 
