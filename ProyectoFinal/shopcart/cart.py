@@ -1,4 +1,4 @@
-# COnstruccion del backend del plugin carrito
+# Construccion del backend del plugin carrito
 class Carro:
     def __init__(self,request):
         # almacenamos la peticion actual para utilizarla mas adelante
