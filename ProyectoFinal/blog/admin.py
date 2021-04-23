@@ -1,3 +1,5 @@
+#Archivo encargado de administrar los utusaios de nuestra DB
+
 from django.contrib import admin
 from .models import Categoria,Post
 

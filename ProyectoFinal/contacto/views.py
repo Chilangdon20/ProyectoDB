@@ -6,9 +6,15 @@ from django.core.mail import EmailMessage
 # Create your views here.
 def contacto(request):
     """
+    Funcion encargada de generar la solicitud de contacto con el servidor de corr
+    eos.
 
     :param request:
     :return Solicitud render de URL ,acceso a la vista contacto :
+
+    return:
+
+    Solicitud al servidor para mandaar el correo.
 
     """
     formulario_contacto=FormularioContacto()
@@ -16,8 +22,8 @@ def contacto(request):
     """
     rescatar y validar la informacion del usuario , en caso
     de que todos los campos esten llenos.
-    
-    
+
+
     """
     if request.method=="POST":
         formulario_contacto=FormularioContacto(data=request.POST)
